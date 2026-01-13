@@ -1,0 +1,138 @@
+body {
+  background: linear-gradient(135deg, #eef2f3, #d9e2ec);
+  font-family: Arial, sans-serif;
+}
+
+/* Wrapper */
+.ui-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Card */
+.ui-card {
+  background: #fff;
+  width: 420px;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Input row */
+.ui-input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.ui-input-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.ui-input-row input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: #4caf50;
+  color: white;
+  padding: 8px 10px;
+}
+
+.btn-primary:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+.btn-cancel {
+  background: #ccc;
+  padding: 8px;
+}
+
+/* Slug */
+.slug-box {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #555;
+  background: #f6f8fa;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+/* Table */
+.ui-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.ui-table th {
+  background: #f4f6f8;
+  text-align: left;
+  padding: 8px;
+}
+
+.ui-table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.ui-table tr:hover {
+  background: #f9fbfc;
+}
+
+/* Links */
+.task-link {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.task-link:hover {
+  text-decoration: underline;
+}
+
+/* Actions */
+.action-btns button {
+  background: transparent;
+  margin-right: 6px;
+}
+
+.action-btns button:hover {
+  color: #4caf50;
+  transform: scale(1.1);
+}
+
+.slug-text {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Empty */
+.empty-state {
+  text-align: center;
+  color: #777;
+  margin-top: 15px;
+}
